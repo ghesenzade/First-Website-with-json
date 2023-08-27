@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image:url('../images/forget.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.container{
+    width: 82%;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+}
+
+.logo img {
+    max-width: 100%;
+    height: 20vh;
+    border-radius: 50%;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+.nav-list {
+    display: flex;
+    margin-top: 10px;
+}
+.nav-item a {
+    font-weight: bolder;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: 0.3s all ease;
+    box-shadow: 2px 2px 5px 2px rgb(249, 246, 246);
+}
+.nav-item a:hover{
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    color: rgb(92, 198, 240);
+}
+.log{
+    gap: 10px;
+}
+
+.regist{
+    background-color: rgb(9, 27, 86);
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.3s all ease;
+}
+.regist a{
+    font-weight: bolder;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: 0.3s all ease;
+}
+.regist:hover{
+    cursor: pointer;
+    background-color: rgba(53, 108, 177, 1);
+}
+/* ..................................Sign Section..................... */
+.forgot-sec {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    margin-left: 3em;
+    margin-top: 50px;
+}
+
+.forgot-content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+}
+
+.forgot-texts{
+    color: #fff;
+}
+
+.forgot-abt, .line, .forgot-head{
+    margin-bottom: 20px;
+}
+.line{
+    height: 5px;
+    width: 33%;
+    background-color: #fff;
+}
+.forgot-head-text{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.forgot-form-part{
+    box-shadow: 0px 2px 5px rgba(250, 247, 247, 0.949);
+    background-color: #fff;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 50px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.send-code{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.forgot-btn {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%;
+    margin: 0 25%;
+}
+.forgot-btn:hover {
+    background-color: #0056b3;
+}
+.login-pg{
+    color: #007bff;
+}

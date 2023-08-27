@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GH-Sign</title>
+    <link rel="stylesheet" href="assets/css/sign.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="d-flex">
+                <div class="logo">
+                    <img src="assets/images/ghlogo1-removebg-preview.png" alt="Logo">
+                </div>
+                <div class="nav-bar">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" target="_blank">Home</a></li>
+                        <li class="nav-item"><a href="#" target="_blank">About</a></li>
+                        <li class="nav-item"><a href="slide.html" target="_blank">Slides</a></li>
+                        <li class="nav-item"><a href="contact.html" target="_blank">Contact</a></li>
+                    </ul>
+                    <ul class="nav-list log">
+                        <li class="regist login"><a href="login.html" target="_blank">Log In</a></li>
+                        <li class="regist sign"><a href="sign.html" target="_blank">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="sign-sec">
+            <div class="container">
+                <div class="sign-content">
+                    <div class="sign-texts">
+                        <h2 class="sign-head">Create <br> A New Account</h2>
+                        <p class="sign-abt">Login: Sign in to your account to <br>
+                            continue the learning journey and access exciting <br>
+                        educational content.</p>
+                        <hr class="line">
+                        <p>By creating an account or logging in, you agree <br>
+                            to our Terms of Service and Privacy Policy.
+                        </p>
+                    </div>
+                    <div class="sign-form-part">
+                        <h1 class="sign-head-text">Account Sign</h1>
+                        <form class="sign-form">
+                            <div class="form-group">
+                                <label for="name">Full Name:</label>
+                                <input type="text" id="name" name="name" class="input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" class="input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" class="input" required>
+                                <div class="overlay">
+                                    <div id="error-message"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password:</label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" class="input" required>
+                            </div>
+                            <div class="check">
+                                <div class="remember">
+                                    <input type="checkbox" name="checbox" id="checkbox">
+                                    <p>Remember me</p>
+                                </div>
+                                <div class="need">
+                                    <a href="#" target="_blank">Need help?</a>
+                                </div>                                
+                            </div><br><br>
+                            <button type="submit" class="sign-btn" target="_blank"><a href="login.html">Sign Up</a></button>
+                            <p class="have-account">Do you have an account? <a href="login.html" target="_blank" class="login-link">Login In</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="assets/js/sign.js"></script>
+</body>
+</html>

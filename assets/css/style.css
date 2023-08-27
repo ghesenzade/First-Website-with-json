@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+} 
+.container{
+    width: 82%;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #1E3266;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+}
+
+.logo img {
+    max-width: 100%;
+    height: 20vh;
+    border-radius: 50%;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+.nav-list {
+    display: flex;
+    margin-top: 10px;
+}
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: 0.3s all ease;
+}
+.nav-item a:hover{
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    color: rgb(92, 198, 240);
+}
+.log{
+    gap: 10px;
+}
+.regist{
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.3s all ease;
+}
+.regist:hover{
+    cursor: pointer;
+    background-color: rgba(53, 108, 177, 1);
+}
+
+/*                              Card section                              */
+.card-section{
+    padding: 150px 0;
+    background-image: url('../images/Cloudy.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 40px);
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+    }
+    .nav-bar {
+        margin-top: 10px;
+    }
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-item {
+        margin-bottom: 5px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .row {
+      justify-content: center;
+    }
+  
+    .card {
+      width: calc(33.33% - 40px);
+    }
+    .d-flex {
+        flex-direction: column;
+    }
+    .nav-bar {
+        margin-top: 10px;
+    }
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-item {
+        margin-bottom: 5px;
+    }
+}
+  
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%;
+      max-width: 300px;
+    }
+}
